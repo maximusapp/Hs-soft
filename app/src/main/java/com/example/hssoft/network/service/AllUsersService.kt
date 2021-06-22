@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface AllUsersService {
 
-    @GET("api")
+    @GET("api/?results=10")
     fun getAllUsers(): Single<AllUsersResponse>
 
 }
